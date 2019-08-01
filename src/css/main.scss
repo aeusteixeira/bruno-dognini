@@ -1,0 +1,20 @@
+$color1: #EDAE49;
+$color2: #D1495B;
+$color3: #00798C;
+$color4: #111168;
+$color5: #30638E;
+
+$theme-colors: (
+    'color1': $color1,
+    'color2': $color2,
+    'color3': $color3,
+    'color4': $color4,
+    'color5': $color5,
+);
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Classes personalizadas
+.texto-amarelo{
+    color: $color1 !important;
+}
