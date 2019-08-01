@@ -1,16 +1,338 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <title>Curso de Desenvolvimento Web com Bootstrap 4 e Sass</title>
+    <script src="https://kit.fontawesome.com/a2946e138a.js"></script>
+    <title>Bruno Dognini</title>
 </head>
-<body class="bg-color4">
-    <h1 class="display-1 texto-amarelo">Olá mundo!</h1>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-sm-start sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand scroll" href="#home">
+                <img src="img/logo.png" alt="Logo" class="img-fluid" width="120px" height="120px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item mx-4 my-auto">
+                        <a class="nav-link scroll" href="#home">Como funciona <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-4 my-auto">
+                        <a class="nav-link scroll" href="#skills">Serviços</a>
+                    </li>
+                    <li class="nav-item mx-4 my-auto">
+                        <a class="nav-link scroll" href="#projetos">Dúvidas</a>
+                    </li>
+                    <li class="nav-item mx-4 my-auto">
+                        <a class="nav-link scroll" href="#sobre">Contato</a>
+                    </li>
+                    <li class="nav-item mx-4 my-auto btn btn-color5">
+                        <a class="nav-link scroll text-light" href="#sobre">Trabalhe conosco</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-3">
+        <section class="container bg-light">
+            <div class="text-center my-4">
+                <span class="bg-color5 text-light rounded-pill p-2">
+                    Como funciona
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+                    <div class="icon pb-3">
+                        <i class="fas fa-mobile-alt fa-3x text-color5"></i>
+                    </div>
+                    <div class="text">
+                        <p>Baixe o app e escolha um dos nossos serviços.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+                    <div class="icon pb-3">
+                        <i class="fas fa-calendar-check fa-3x text-color5"></i>
+                    </div>
+                    <div class="text">
+                        <p>Escolha local, data, horário e pague pelo app.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 text-center">
+                    <div class="icon pb-3">
+                        <i class="fas fa-home fa-3x text-color5"></i>
+                    </div>
+                    <div class="text">
+                        <p>Receba uma das nossas incríveis profissionais na sua casa..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container bg-light">
+            <div class="text-center my-4">
+                <span class="bg-color5 text-light rounded-pill p-2">
+                    Nossos serviços
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3 text-center">
+                    <div class="icon pb-3">
+                        <img src="img/novas/unha.jpg" class="img-fluid img-cort">
+                    </div>
+                    <div class="font-weight-bold title py-2">
+                        Unhas
+                    </div>
+                    <div class="text">
+                        <p>Baixe o app e escolha um dos nossos serviços.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3 text-center">
+                    <div class="icon pb-3">
+                        <img src="img/novas/maquiagem.jpg" class="img-fluid img-cort">
+                    </div>
+                    <div class="font-weight-bold title py-2">
+                        Maquiagem
+                    </div>
+                    <div class="text">
+                        <p>Revele sua beleza!</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3 text-center">
+                    <div class="icon pb-3">
+                        <img src="img/novas/caeblo.jpg" class="img-fluid img-cort">
+                    </div>
+                    <div class="font-weight-bold title py-2">
+                        Cabelos
+                    </div>
+                    <div class="text">
+                        <p>Escova lisa e modelada para cabelos curtos e longos.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3 text-center">
+                    <div class="icon pb-3">
+                        <img src="img/novas/desconto.jpg" class="img-fluid img-cort">
+                    </div>
+                    <div class="font-weight-bold title py-2">
+                        Desconto
+                    </div>
+                    <div class="text">
+                        <p>Pague até 20% menos, sendo um membro especial.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-4 text-right">
+                            <img src="img/novas/alarm_clock_PNG56.png" alt="" class="img-fluid img-cort">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <h3>
+                                Receba um profissional no conforto de sua casa em até 40 minutos!
+                            </h3>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-3">
+                <div class="col-sm-12 my-4">
+                    <h5 class="text-center">
+                        Baixe o app!
+                    </h5>
+                </div>
+
+                <div class="col-6 col-sm-12 col-md-12 col-lg-6 text-right">
+                    <img src="img/novas/app-store.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm-12 col-md-12 col-lg-6 text-left">
+                    <img src="img/novas/google-play.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section class="container bg-light">
+            <div class="text-center my-4">
+                <span class="bg-color5 text-light rounded-pill p-2">
+                    Comentários
+                </span>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner p-5">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center mb-3">
+                            <div class="col-sm-12 col-md-4 text-center">
+                                <img src="img/icons/foto1.jpg" alt="" class="img-fluid rounded-circle w-45 animate">
+                            </div>
+                            <div class="col-sm-12 col-md-8">
+                                <h4 class="title">Adelle Charles</h4>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+                                    incidunt aliquam
+                                    assumenda
+                                    adipisci, earum corrupti numquam dolorem ipsam debitis ad mollitia! Sed illum, quos
+                                    dicta
+                                    dolorem sequi laudantium et est.</p>
+                                <span class="title text-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center mb-3">
+                            <div class="col-sm-12 col-md-4 text-center">
+                                <img src="img/icons/foto2.jpg" alt="" class="img-fluid rounded-circle w-45 animate">
+                            </div>
+                            <div class="col-sm-12 col-md-8">
+                                <h4 class="title">Rem</h4>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+                                    incidunt aliquam
+                                    assumenda
+                                    adipisci, earum corrupti numquam dolorem ipsam debitis ad mollitia! Sed illum, quos
+                                    dicta
+                                    dolorem sequi laudantium et est.</p>
+                                <span class="title text-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center mb-3">
+                            <div class="col-sm-12 col-md-4 text-center">
+                                <img src="img/icons/foto3.png" alt="" class="img-fluid rounded-circle w-45 animate">
+                            </div>
+                            <div class="col-sm-12 col-md-8">
+                                <h4 class="title">Sauro</h4>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+                                    incidunt aliquam
+                                    assumenda
+                                    adipisci, earum corrupti numquam dolorem ipsam debitis ad mollitia! Sed illum, quos
+                                    dicta
+                                    dolorem sequi laudantium et est.</p>
+                                <span class="title text-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+        <section class="container bg-light">
+            <div class="text-center my-4">
+                <span class="bg-color5 text-light rounded-pill p-2">
+                    Super confiável!
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4 my-2">
+                    <div class="media">
+                        <div class="mr-3">
+                            <i class="fas fa-toolbox fa-3x text-color5"></i>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 my-2">
+                    <div class="media">
+                        <div class="mr-3">
+                            <i class="fas fa-file-signature fa-3x text-color5"></i>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 my-2">
+                    <div class="media">
+                        <div class="mr-3">
+                            <i class="fas fa-clipboard-list fa-3x text-color5"></i>
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gradient p-5 mt-3">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6">
+                        <h1 class="display-4">
+                            Seja uma profissional, aumente sua renda e faça seus horários!
+                        </h1>
+                        <p class="lead">
+                            Nossas profissionais ganham até R$4 mil por mês e
+                            conseguem ter mais liberdade e flexibilidade de horários.
+                        </p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-5 text-center">
+                                <span class="display-4 bg-light rounded-circle text-center px-2 py-2">
+                                    <i class="fas fa-money-bill-wave text-info"></i>
+                                </span>
+                                <p class="mt-3 lead">Tenha uma renda extra!</p>
+                            </div>
+                            <div class="col-sm-12 col-lg-5 text-center">
+                                <span class="display-4 bg-light rounded-circle text-center px-3 py-2">
+                                    <i class="fas fa-clock text-info"></i>
+                                </span>
+                                <p class="mt-3 lead">Monte sua própria agenda!</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                                <button class="btn btn-color3 btn-lg rounded-pill">Quero fazer parte!</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/mulher.png" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

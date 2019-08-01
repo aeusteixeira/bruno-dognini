@@ -1,11 +1,10 @@
-$color1: #EDAE49;
-$color2: #D1495B;
-$color3: #00798C;
-$color4: #111168;
-$color5: #30638E;
+$color1: #1AF1FF;
+$color2: #E0E0E0;
+$color3: rgb(66, 148, 219);
+$color4: #1AF1FE;
+$color5: #77BAF6;
 
-$theme-colors: (
-    'color1': $color1,
+$theme-colors: ('color1': $color1,
     'color2': $color2,
     'color3': $color3,
     'color4': $color4,
@@ -14,7 +13,24 @@ $theme-colors: (
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
-// Classes personalizadas
-.texto-amarelo{
-    color: $color1 !important;
+body {
+    background-color: #f6f6f6;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.img-cort {
+    height: 267px !important;
+    width: 267px !important;
+    //filter: hue-rotate(160deg);
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.gradient{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
