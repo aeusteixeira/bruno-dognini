@@ -11440,4 +11440,8 @@ header {
 .all-news, .all-news:hover {
   text-decoration: none;
 }
+
+.vh-100 {
+  min-width: 100vh;
+}
 /*# sourceMappingURL=main.css.map */
