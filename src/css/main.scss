@@ -11,7 +11,6 @@ $theme-colors: ('color1': $color1,
     'color5': $color5,
 );
 
-@import '../../node_modules/bootstrap/scss/bootstrap';
 
 body {
     background-color: #f6f6f6;
@@ -31,7 +30,7 @@ body {
     width: 45% !important;
 }
 
-.gradient{
+.gradient {
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
@@ -40,23 +39,24 @@ body {
     margin-left: 2.5rem !important;
 }
 
-header, .contato{
+header,
+.contato {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
 
-.contato{
+.contato {
     background-image: url(../img/final2.jpg);
     background-position: center;
 }
 
-header{
+header {
     background-image: url(../img/img2.jpg);
 }
 
-.header::after{
+.header::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -84,18 +84,17 @@ header{
     color: rgb(144, 71, 71)
 }
 
-.all-news, .all-news:hover {
+.all-news,
+.all-news:hover {
     text-decoration: none;
 }
 
-.vh-100{
-    min-width: 100vh;
+.text-col {
+    margin-top: -85px;
 }
 
-.text-col{
-    margin-top: -85px;
-    }
-    
-    .text-col-1{
+.text-col-1 {
     margin-top: -60px;
-    }
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
