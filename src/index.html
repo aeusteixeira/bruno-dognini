@@ -31,12 +31,14 @@
                         <a class="nav-link scroll" href="#servicos">Serviços</a>
                     </li>
                     <li class="nav-item mx-4 my-auto">
-                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                        <a class="nav-link" data-toggle="modal" data-target="#DuvidasModal">
                             Dúvidas
                         </a>
                     </li>
                     <li class="nav-item mx-4 my-auto">
-                        <a class="nav-link scroll" href="#sobre">Contato</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#ContatoModal">
+                            Contato
+                        </a>
                     </li>
                     <li class="nav-item mx-4 my-auto btn btn-color5">
                         <a class="nav-link scroll text-light" href="#trabalhe">Trabalhe conosco</a>
@@ -47,18 +49,18 @@
     </nav>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="DuvidasModal" tabindex="-1" role="dialog" aria-labelledby="DuvidasModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Dúvidas</h5>
+                    <h5 class="modal-title" id="DuvidasModalLabel">Dúvidas</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                <form action="testmail.php">
                 <div class="modal-body">
-                    <form action="">
                         <div class="form-group">
                             <label for="nome">Nome</label>
                             <input type="text" name="nome" id="nome" class="form-control"
@@ -74,12 +76,49 @@
                             <label for="duvida">Faca-nos uma pergunta</label>
                             <textarea class="form-control" name="duvida" id="duvida"></textarea>
                         </div>
-                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
                 </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="ContatoModal" tabindex="-1" role="dialog" aria-labelledby="ContatoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ContatoModalLabel">Em que posso ajudar?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="testmail.php">
+                <div class="modal-body">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" class="form-control"
+                                placeholder="Precisamos saber o seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control" aria-describedby="helpId">
+                            <small id="helpId" class="text-muted">Nós nunca iremos divulgar o seu e-mail com
+                                ninguém.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="duvida">Qual é o motivo de seu contato?</label>
+                            <textarea class="form-control" name="duvida" id="duvida"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
             </div>
         </div>
     </div>
