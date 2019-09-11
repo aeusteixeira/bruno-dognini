@@ -97,4 +97,30 @@ header {
     margin-top: -60px;
 }
 
+.duvidas-sm {
+    display: none;
+}
+
+.duvidas-lg {
+    display: block;
+}
+
+@media (max-width: 575.98px) {
+    .text-col {
+        margin-top: auto;
+    }
+
+    .text-col-1 {
+        margin-top: auto;
+    }
+
+    .duvidas-sm {
+        display: block;
+    }
+
+    .duvidas-lg {
+        display: none;
+    }
+}
+
 @import '../../node_modules/bootstrap/scss/bootstrap';

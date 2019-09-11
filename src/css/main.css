@@ -83,6 +83,29 @@ header {
   margin-top: -60px;
 }
 
+.duvidas-sm {
+  display: none;
+}
+
+.duvidas-lg {
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .text-col {
+    margin-top: auto;
+  }
+  .text-col-1 {
+    margin-top: auto;
+  }
+  .duvidas-sm {
+    display: block;
+  }
+  .duvidas-lg {
+    display: none;
+  }
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
